@@ -2,7 +2,7 @@ import unittest
 import logic_circuit as lc
 
 
-class TestMainMethods(unittest.TestCase):
+class TestLogicCircuit(unittest.TestCase):
 
     def test_AND(self):
         self.assertEqual(lc.AND(0, 0), 0)
