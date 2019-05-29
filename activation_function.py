@@ -18,7 +18,8 @@ def identity_function(x):
 
 
 def softmax(a):
-    exp_a = np.exp(a)
+    c = np.max(a)
+    exp_a = np.exp(a - c)  # Overflow measures
     sum_exp_a = np.sum(exp_a)
     y = exp_a / sum_exp_a
     return y
